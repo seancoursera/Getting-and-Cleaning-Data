@@ -10,9 +10,9 @@ setwd('test')
 X_test <- data.frame(read.table('X_test.txt'))
 names(X_test) <- featuresdf$V2
 
-#read ytest to y, change variable name to act_id
-y <- data.frame(read.table('y_test.txt'))
-names(y) <- 'act_id'
+#read ytest to act_id, change variable name to act_id
+act_id <- data.frame(read.table('y_test.txt'))
+names(act_id) <- 'act_id'
 
 #read subject to sub, change variable name to sub
 sub <- read.table('subject_test.txt')
