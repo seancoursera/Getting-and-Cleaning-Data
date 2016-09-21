@@ -58,7 +58,7 @@ melted <- melt(meanandstd, id=c("act_id","sub"))
 tidy_data <- dcast(melted, sub+act_id ~ variable, mean)
 
 #write to the file
-write.csv(tidy_data, "tidy_data.csv", row.names=FALSE)
+write.csv(tidy_data, "tidy_data.txt", row.names=FALSE)
 
 
 
