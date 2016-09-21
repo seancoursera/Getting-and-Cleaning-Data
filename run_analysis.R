@@ -46,8 +46,8 @@ no_dup<- X_df[,!duplicated(colnames(X_df))]
 meanandstd <- select(no_dup, act_id, sub, contains("mean"), contains("std"))
 
 #3. Uses descriptive activity names to name the activities in the data set
-X_df$act_id <- as.factor(X_df$act_id)
-levels(X_df$act_id) <- activity$V2
+meanandstd$act_id <- as.factor(meanandstd$act_id)
+levels(meanandstd$act_id) <- activity$V2
 
 #4. Appropriately labels the data set with descriptive variable names.
 #I think this is done in the previous stpes. 
